@@ -1,0 +1,18 @@
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["https://localhost:5173"]
+autoconfirm = true
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = false
+
+[auth.external.github]
+enabled = true
+client_id = "your-github-client-id"
+secret = "your-github-client-secret"
+redirect_uri = "http://localhost:5173/auth/callback"
+
+[storage]
+file_size_limit = "50MiB"
